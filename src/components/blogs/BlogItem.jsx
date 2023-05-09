@@ -1,5 +1,10 @@
 import PropTypes from 'prop-types'
 
+function formatPostingTime(postingTime) {
+  const options = { weekday: 'long', month: 'short', day: 'numeric' }
+  return postingTime.toLocaleDateString(undefined, options)
+}
+
 export default function BlogItem({
   title,
   subtitle,
@@ -29,7 +34,7 @@ export default function BlogItem({
             <span className="font-medium text-gray-700">{authorName}</span>
           </div>
           <div className="text-sm text-gray-500">
-            {new Date(postingTime).toLocaleString().split(',')[0]}
+            {formatPostingTime(new Date(postingTime))}
           </div>
         </div>
       </div>
