@@ -2,7 +2,7 @@ import BlogList from '../components/blogs/BlogList'
 
 export default function Archive() {
   return (
-    <section className="mx-auto max-w-5xl p-5">
+    <section className="mx-auto max-w-7xl p-5">
       <hgroup className="mb-10">
         <h1 className="mb-5 text-4xl font-bold">Archives</h1>
         <p className="text-xl text-gray-800">
