@@ -22,7 +22,7 @@ export default function Newsletter() {
             type="email"
             autoComplete="email"
             required
-            className="w-full rounded-md border border-gray-300 px-5 py-3 placeholder-gray-500 shadow-sm focus:border-transparent focus:ring-2 focus:ring-violet-500 sm:max-w-xs"
+            className="w-full rounded-md border border-gray-300 px-5 py-3 placeholder-gray-500 shadow-sm outline-none focus:border-transparent focus:ring-2 focus:ring-violet-500 sm:max-w-xs"
             placeholder="Enter your email"
           />
           <button

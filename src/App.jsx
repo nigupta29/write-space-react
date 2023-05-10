@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Footer from './components/layouts/Footer'
 import Newsletter from './components/layouts/Newsletter'
 import Archive from './pages/Archive'
 import BlogPost from './pages/BlogPost'
@@ -20,8 +21,8 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Newsletter />
+        <Footer />
       </BrowserRouter>
-      <div className="min-h-screen"></div>
     </div>
   )
 }
