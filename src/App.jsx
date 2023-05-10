@@ -1,6 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
 import Footer from './components/layouts/Footer'
+import Navbar from './components/layouts/Navbar'
 import Newsletter from './components/layouts/Newsletter'
+
 import Archive from './pages/Archive'
 import BlogPost from './pages/BlogPost'
 import Home from './pages/Home'
@@ -12,6 +15,7 @@ export default function App() {
   return (
     <div className="bg-white">
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
