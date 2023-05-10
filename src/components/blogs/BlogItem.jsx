@@ -15,7 +15,7 @@ export default function BlogItem({
   postingTime,
 }) {
   return (
-    <article className="bg-white shadow-md">
+    <article className="bg-white shadow-md hover:drop-shadow-lg">
       <img src={image} alt={title} className="h-56 w-full object-cover" />
       <div className="flex min-h-[250px] flex-col p-5">
         <div className="space-y-2">
