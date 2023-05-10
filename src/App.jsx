@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Newsletter from './components/layouts/Newsletter'
 import Archive from './pages/Archive'
 import BlogPost from './pages/BlogPost'
 import Home from './pages/Home'
@@ -18,7 +19,9 @@ export default function App() {
           <Route path="/blogs/archive" element={<Archive />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Newsletter />
       </BrowserRouter>
+      <div className="min-h-screen"></div>
     </div>
   )
 }
