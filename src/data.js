@@ -50,7 +50,7 @@ export const blogs = [
       'Discover the joys of plant-based eating with these tasty recipes',
     tag: 'Food',
     image:
-      'https://plus.unsplash.com/premium_photo-1664648119219-b00a63aa4bdb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+      'https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
     authorName: 'Emily Taylor',
     authorPhoto: 'https://randomuser.me/api/portraits/women/3.jpg',
     postingTime: '2022-02-18T14:45:00.000Z',
