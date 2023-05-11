@@ -4,7 +4,7 @@ import Container from '../utils/Container'
 
 export default function Navbar() {
   return (
-    <header className="mb-10 bg-gray-900 text-gray-200">
+    <header className="bg-gray-900 text-gray-200">
       <Container>
         <div className="flex flex-col flex-wrap items-center justify-between gap-5 md:flex-row">
           <Link to={'/'} className="flex items-center">
