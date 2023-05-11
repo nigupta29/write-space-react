@@ -1,10 +1,6 @@
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-
-function formatPostingTime(postingTime) {
-  const options = { weekday: 'long', month: 'short', day: 'numeric' }
-  return postingTime.toLocaleDateString(undefined, options)
-}
+import { formatPostingTime } from '../../utils/helperFunctions'
 
 export default function BlogItem({
   id,
@@ -37,7 +33,7 @@ export default function BlogItem({
               <span className="font-medium text-gray-700">{authorName}</span>
             </div>
             <div className="text-sm text-gray-500">
-              {formatPostingTime(new Date(postingTime))}
+              {formatPostingTime(postingTime)}
             </div>
           </div>
         </div>

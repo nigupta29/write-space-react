@@ -1,5 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { blogs } from '../data'
+import { formatPostingTime } from '../utils/helperFunctions'
+
 export default function BlogPost() {
   const { id } = useParams()
   const post = blogs.find(post => post.id === Number(id))
@@ -58,7 +60,9 @@ export default function BlogPost() {
           />
           <div>
             <div className="font-semibold text-gray-700">{post.authorName}</div>
-            <div className="text-gray-600">{post.postingTime}</div>
+            <div className="text-gray-600">
+              {formatPostingTime(post.postingTime)}
+            </div>
           </div>
         </div>
         <div className="flex">
